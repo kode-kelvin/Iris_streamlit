@@ -240,9 +240,9 @@ def main():
                 img = Image.open('IMG_1681.jpg')
                 enh = ImageEnhance.Contrast(img)
                 img_wth = st.slider('Set Width', 200, 300)
-                heigth_wdth = st.slider('Set Heigth', 100, 300)
+                #heigth_wdth = st.slider('Set Heigth', 100, 300)
                 number = st.slider('Enhance Image', 1.0, 5.0)
-                st.image(enh.enhance(number), width=img_wth, heigth=heigth_wdth)
+                st.image(enh.enhance(number), width=img_wth)
 
             st.write('''
 
